@@ -1,0 +1,21 @@
+.templateCarousel{overflow:hidden;padding:82px 0 92px;border-top:1px solid var(--line);background:linear-gradient(180deg,#f2f3f4,#fbfbf7)}
+.templateCarouselHead{text-align:center;margin:0 auto 44px;padding:0 24px}
+.templateCarouselHead span{font:500 9px Geist Mono,monospace;text-transform:uppercase;letter-spacing:.15em;color:var(--muted)}
+.templateCarouselHead h2{font-size:clamp(42px,5.5vw,72px);line-height:1;letter-spacing:-.055em;margin:17px 0 16px}
+.templateCarouselHead h2 em{font-family:Georgia,serif;font-weight:400;background:var(--gradient);background-clip:text;color:transparent}
+.templateCarouselHead p{margin:0;color:var(--muted);font-size:17px}
+.templateViewport{overflow:hidden;padding:10px 0 20px}
+.templateTrack{display:flex;gap:24px;width:max-content;animation:templateScroll 34s linear infinite}
+.templateViewport:hover .templateTrack{animation-play-state:paused}
+.movingTemplateCard{width:min(680px,72vw);flex:0 0 auto;border:1px solid var(--line);border-radius:22px;background:#fff;overflow:hidden;box-shadow:0 20px 55px rgba(24,27,24,.1);transition:transform .25s}
+.movingTemplateCard:hover{transform:translateY(-6px)}
+.templatePoster{display:block;aspect-ratio:16/8.2;overflow:hidden;background:#161817}
+.templatePoster img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}
+.movingTemplateCard:hover .templatePoster img{transform:scale(1.025)}
+.templateCardFoot{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 24px}
+.templateCardFoot small{display:block;font:500 9px Geist Mono,monospace;text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin-bottom:8px}
+.templateCardFoot h3{font-size:25px;line-height:1;margin:0;letter-spacing:-.035em}
+.templateViewButton{flex:0 0 auto;padding:13px 18px;border-radius:999px;background:var(--gradient);color:#fff;font-size:12px;font-weight:750}
+@keyframes templateScroll{to{transform:translateX(calc(-33.333% - 8px))}}
+@media(prefers-reduced-motion:reduce){.templateTrack{animation:none}.templateViewport{overflow-x:auto}.movingTemplateCard:hover{transform:none}}
+@media(max-width:650px){.templateCarousel{padding:64px 0 72px}.templateCarouselHead h2{font-size:44px}.movingTemplateCard{width:86vw;border-radius:16px}.templateTrack{gap:14px;animation-duration:26s}.templateCardFoot{padding:18px;align-items:flex-start;flex-direction:column}.templateViewButton{width:100%;text-align:center}}

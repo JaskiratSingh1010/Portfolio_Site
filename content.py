@@ -8,11 +8,13 @@ PROJECTS = [
     dict(slug="aahar-lead-tracker", title="Aahar Lead Tracker", category="Team Operations · Lead CRM", summary="Messy exhibition data cleaned, distributed, and visible across nine sales teams.", image=None, result="Nine teams moved onto one live lead-ownership dashboard."),
 ]
 
+WEBSITE_TEMPLATES = [
+    dict(slug="murliwala-bakers", title="Murliwala Bakers", category="Bakery & local retail", image="murliwala-template-preview.jpg", video="/static/video/murliwala-template.mp4"),
+    dict(slug="dubey-industries", title="Dubey Industries", category="Industrial & manufacturing", image="dubey-template-preview.jpg", video="/static/video/dubey-website-template.mp4"),
+]
+
 SERVICES = [
-    dict(slug="business-websites", number="01", title="Business Website Development", eyebrow="Presence & lead generation", summary="A focused, high-performance website designed to explain your value and turn visitors into enquiries.", timeline="1–3 weeks", deliverables=["Responsive custom design", "Lead forms and contact journeys", "Basic SEO and analytics", "Deployment and launch support"], templates=[
-        dict(title="Murliwala Bakers", category="Bakery & local retail", description="A warm, conversion-focused bakery website concept with an online menu, customer reviews, location details and direct ordering journeys.", video="/static/video/murliwala-template.mp4", tone="bakery"),
-        dict(title="Dubey Industries", category="Industrial & manufacturing", description="A credible B2B manufacturing website concept designed to present capabilities, products and enquiry details clearly to prospective buyers.", video="/static/video/dubey-website-template.mp4", tone="industrial"),
-    ]),
+    dict(slug="business-websites", number="01", title="Business Website Development", eyebrow="Presence & lead generation", summary="A focused, high-performance website designed to explain your value and turn visitors into enquiries.", timeline="1–3 weeks", deliverables=["Responsive custom design", "Lead forms and contact journeys", "Basic SEO and analytics", "Deployment and launch support"]),
     dict(slug="business-dashboards", number="02", title="Business Dashboards", eyebrow="Clarity & live reporting", summary="One reliable operational view that turns scattered business data into decisions.", timeline="2–4 weeks", deliverables=["KPI and performance dashboard", "Filters, charts and drill-downs", "Database or API integration", "Role-based access"]),
     dict(slug="workflow-automation", number="03", title="Workflow Automation", eyebrow="Less repetition, more control", summary="Reliable systems that replace repetitive handoffs, follow-ups and spreadsheet-heavy processes.", timeline="2–4 weeks", deliverables=["Current-process review", "Automated approvals and notifications", "Email, spreadsheet and API integrations", "Activity logs and documentation"]),
     dict(slug="ai-business-tools", number="04", title="AI Tools for Business", eyebrow="Applied AI, built responsibly", summary="Purpose-built AI assistants that research, process documents, prepare replies and support decisions.", timeline="3–6 weeks", deliverables=["Custom AI agent", "Business data integrations", "Human review workflows", "Testing and safeguards"]),

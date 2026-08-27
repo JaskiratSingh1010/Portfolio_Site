@@ -5,7 +5,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi import HTTPException
-from content import PROJECTS, SERVICES
+from content import PROJECTS, SERVICES, WEBSITE_TEMPLATES
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -19,7 +19,7 @@ templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def portfolio(request: Request) -> HTMLResponse:
-    return templates.TemplateResponse(request=request, name="index.html")
+    return templates.TemplateResponse(request=request, name="index.html", context={"website_templates": WEBSITE_TEMPLATES})
 
 @app.get("/projects", response_class=HTMLResponse)
 async def projects(request: Request) -> HTMLResponse:
