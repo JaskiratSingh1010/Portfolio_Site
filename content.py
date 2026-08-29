@@ -11,6 +11,7 @@ PROJECTS = [
 WEBSITE_TEMPLATES = [
     dict(slug="murliwala-bakers", title="Murliwala Bakers", category="Bakery & local retail", image="murliwala-template-preview.jpg", video="/static/video/murliwala-template.mp4"),
     dict(slug="dubey-industries", title="Dubey Industries", category="Industrial & manufacturing", image="dubey-template-preview.jpg", video="/static/video/dubey-website-template.mp4"),
+    dict(slug="the-detailing-gang", title="The Detailing Gang", category="Automotive & car detailing", image="car-detailing-template-preview.jpg", video="/static/video/car-detailing-template.mp4"),
 ]
 
 SERVICES = [
